@@ -1,0 +1,42 @@
+{
+  "name": "angular2-multievent-bindings-plugin",
+  "version": "1.0.0",
+  "description": "A small plugin which allows you to bind multiple events in your angular2 templates. ",
+  "main": "./multi_event.main.js",
+  "scripts": {
+    "prepublish": "typings install && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "typings": "./multi_event.main.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLarkInn/angular2-multievent-bindings-plugin.git"
+  },
+  "keywords": [
+    "Angular2",
+    "Events",
+    "EventManager",
+    "plugins",
+    "service",
+    "plugin"
+  ],
+  "author": "Sean Larkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheLarkInn/angular2-multievent-bindings-plugin/issues"
+  },
+  "homepage": "https://github.com/TheLarkInn/angular2-multievent-bindings-plugin#readme",
+  "devDependencies": {
+    "angular2": "^2.0.0-beta.15",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1",
+    "zone.js": "^0.6.12"
+  },
+  "peerDependencies": {
+    "angular2": "~2.0.0-beta.15"
+  }
+}

@@ -1,0 +1,1 @@
+export * from './src/multi_event.plugin.ts';
