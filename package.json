@@ -1,6 +1,6 @@
 {
   "name": "angular2-multievent-bindings-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small plugin which allows you to bind multiple events in your angular2 templates. ",
   "main": "./multi_event.main.js",
   "scripts": {
