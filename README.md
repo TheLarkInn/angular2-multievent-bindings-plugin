@@ -26,7 +26,7 @@ import this plugin from your node modules and then add it to your `EVENT_MANAGER
 	bootstrap(App, [
 		APP_PROVIDERS,
 		provide(EVENT_MANAGER_PLUGINS, { multi: true, useClass: MultiEventPlugin})
-	]).catch((error) => console.error)
+	]).catch((error) => console.error(error));
 
 
 
