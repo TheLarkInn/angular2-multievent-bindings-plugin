@@ -12,13 +12,16 @@ Currently there is no way to bind multiple events to one expression in angular2 
 This plugin allows you to do this!!!
 
 
+# Installation
+`npm install angular2-multievent-bindings-plugin --save`
+
 # Useage
 import this plugin from your node modules and then add it to your `EVENT_MANAGER_PLGUINS`:
 
 ```typescript
 	
 	import {MultiEventPlugin} from 'angular2-multievent-bindings-plugin';
-	import {EVENT_MANAGER_PLGUINS} from 'angular2/platform/common_dom';
+	import {EVENT_MANAGER_PLUGINS} from 'angular2/platform/common_dom';
 	import {bootstrap} from 'angular2/platform/browser';
 	import {provide} from 'angular2/core';
 	import {App, APP_PROVIDERS} from './app';
@@ -26,8 +29,6 @@ import this plugin from your node modules and then add it to your `EVENT_MANAGER
 	bootstrap(App, [
 		APP_PROVIDERS,
 		provide(EVENT_MANAGER_PLUGINS, { multi: true, useClass: MultiEventPlugin})
-	]).catch((error) => console.error(error));
-
-
+	]).catch((error) => console.error(error));	
 
 ```
