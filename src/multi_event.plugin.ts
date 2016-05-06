@@ -1,8 +1,10 @@
-import {EventManagerPlugin} from 'angular2/platform/common_dom';
-import {Injectable} from 'angular2/core';
+import '@angular/common';
+import {EventManagerPlugin, EventManager} from '@angular/platform-browser/src/dom/events/event_manager';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class MultiEventPlugin extends EventManagerPlugin {
+  manager: EventManager;
   getMultiEventArray(eventName: string): string[] {
     return eventName.split(",")
       .filter((item, index): boolean => { return item && item != '' })
