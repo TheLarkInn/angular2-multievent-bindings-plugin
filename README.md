@@ -21,9 +21,9 @@ import this plugin from your node modules and then add it to your `EVENT_MANAGER
 ```typescript
 	
 	import {MultiEventPlugin} from 'angular2-multievent-bindings-plugin';
-	import {EVENT_MANAGER_PLUGINS} from 'angular2/platform/common_dom';
-	import {bootstrap} from 'angular2/platform/browser';
-	import {provide} from 'angular2/core';
+	import {EVENT_MANAGER_PLUGINS} from '@angular/platform-browser';
+	import {bootstrap} from '@angular/platform-browser-dynamic';
+	import {provide} from '@angular/core';
 	import {App, APP_PROVIDERS} from './app';
 
 	bootstrap(App, [
